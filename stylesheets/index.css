@@ -11,6 +11,7 @@
     --text-color-title: #2E2E2E;
     --text-white: #FFFFFF;
     --fade-disabled-color: #E6E6E6;
+    --text-field-color: #CCCCCC;
     /*--body-color:*/
 
 
@@ -220,7 +221,7 @@ nav {
     display: flex;
     /*align-self: center;*/
     /*justify-content: center;*/
-    column-gap: 35px;
+    /*column-gap: 35px;*/
 }
 
 .venue-details{
@@ -234,7 +235,7 @@ nav {
 
 .book-ticket {
     display: flex;
-    align-self: center;
+    /*align-items: center;*/
     justify-content: center;
 }
 
@@ -572,4 +573,79 @@ nav {
     height: 100px;
     background-size: contain;
     overflow: hidden;
+}
+
+/* Email subscription */
+.email-subscription {
+    height: 580px;
+    margin-top: 100px;
+}
+
+.email-subscription .sub-title {
+    font-size: 4rem;
+    color: var(--text-white);
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+.subs-container {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.form-container {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+.form-flex-container {
+    display: flex;
+    column-gap: 30px;
+    /*flex-direction: column;*/
+}
+
+form label {
+    margin-bottom: 10px;
+    color: var(--text-white);
+}
+
+form #email {
+    width: 300px;
+    height: 50px;
+}
+
+.form-container input::placeholder {
+    padding: 10px;
+    color: var(--text-field-color);
+}
+
+/* Footer section */
+
+.footer-area {
+    padding-top: 50px;
+    height: 200px;
+    background-color: var(--secondary-color-gray);
+}
+
+.copy-write {
+    display: flex;
+    justify-content: center;
+}
+
+.copy-write p {
+    color: var(--text-white);
+}
+
+.copy-write a {
+    text-decoration: none;
+    color: var(--fade-disabled-color);
+}
+
+.copy-write a:hover {
+    color: var(--primary-color-blue);
 }
