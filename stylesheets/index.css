@@ -2,7 +2,7 @@
 
 
 /*  Colors   */
-    --primary-color-blue: #108AEE;
+    --primary-color-blue: #004085;
     --primary-color-dark-gray: #08133A;
     --secondary-color-sea-blue: #CCE8FF;
     --secondary-color-gray: #2D3658;
@@ -93,6 +93,13 @@
     width: 50%;
 }
 
+/*img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*}*/
+
 
 
 
@@ -127,6 +134,10 @@ nav {
     max-width: 64px;
     justify-content: flex-start;
     align-items: center;
+}
+.navbar .logo img {
+    width: 40px;
+    height: 41px;
 }
 
 .nav-links {
@@ -203,9 +214,9 @@ nav {
 }
 
 .container .conf-index {
-    font-size: 1.2rem;
-    width: 10%;
-    color: var(--text-white);
+    font-size: 1rem;
+    width: 20%;
+    color: var(--fade-disabled-color);
 }
 
 .container .title {
@@ -235,9 +246,122 @@ nav {
 
 .book-ticket {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: center;
 }
+
+
+/* Upcoming events*/
+
+.upcoming-events {
+    height: 750px;
+    margin-top: 75px;
+}
+.upcoming-events .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    /*width: 100%;*/
+    /*border: 25px;*/
+
+}
+.upcoming-events h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--text-white);
+    margin-bottom: 50px;
+}
+
+.upcoming-events #events-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--fade-disabled-color);
+    margin-bottom: 50px;
+}
+
+.event-card {
+    width: 400px;
+    height: 670px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+.img-container-event {
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+    height: 343px;
+    z-index: 1;
+
+    /*border-radius: 25px;*/
+}
+
+.img-container-event img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.img-container-event::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(16, 138, 238, 0.5);
+    opacity: 0;
+    border-radius: 25px;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+.img-container-event:hover::before {
+    opacity: 1;
+}
+.img-container-event:hover img {
+    opacity: 0.7;
+}
+
+.short-information ul {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.short-information ul li {
+    color: #192a56;
+    font-size: 1.2rem;
+}
+.upcoming-events .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.event-card h4 {
+    font-size: 1.2rem;
+    color: var(--secondary-color-medium-gray);
+    font-weight: bold;
+    margin-top: 25px;
+}
+.event-card p {
+    margin: 25px 0;
+    color: #333333;
+}
+.event-card .links a{
+    margin: 25px 0;
+    color: white;
+    background-color: var(--primary-color-blue);
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.event-card .links a:hover {
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        transform: translateY(2px);
+
+}
+
 
 /* About info section */
 
@@ -246,18 +370,19 @@ nav {
     height: 550px;
     display: flex;
     align-items: center;
+    margin-top: 100px;
 }
 
 .two-columns .big {
-    width: 60%;
+    width: 50%;
 }
 .two-columns .small {
-    width: 40%;
+    width: 50%;
     margin-left: 50px;
 }
 
 .col-left h2 {
-    font-size: 3.8rem;
+    font-size: 3.1rem;
 
 }
 
@@ -325,6 +450,16 @@ nav {
     align-items: center;
     margin-bottom: 50px;
 }
+
+.section-title h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-white);
+    display: flex;
+    justify-content: center;
+}
+
+
 .short-details-icons {
     font-size: 2.5rem;
     color: var(--primary-color-blue);
@@ -345,7 +480,7 @@ nav {
     height: 650px;
 }
 .event-schedule .schedule-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px;
     color: var(--text-white);
@@ -467,7 +602,7 @@ nav {
     /*margin-top: 200px;*/
 }
 .venue-details {
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
 }
 .venue-details .venue {
     margin-right: 50px;
@@ -601,7 +736,7 @@ nav {
 form {
     display: flex;
     flex-direction: column;
-
+    margin-top: 100px;
 }
 .form-flex-container {
     display: flex;
