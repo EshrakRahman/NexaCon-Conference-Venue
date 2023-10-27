@@ -336,7 +336,7 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
-.event-card h4 {
+.event-card h3 {
     font-size: 1.2rem;
     color: var(--secondary-color-medium-gray);
     font-weight: bold;
@@ -626,7 +626,8 @@ nav {
 /* Price section*/
 
 .price-details {
-    height: 690px;
+    height: 790px;
+    margin-top: 100px;
 }
 
 .price-details .tickets-info h2{
@@ -651,7 +652,7 @@ nav {
 
 .regular-price, .golden-price, .platinum-price {
     width: 400px;
-    height: 335px;
+    height: 385px;
     background-color: var(--secondary-color-gray);
     border-radius: 10px;
     padding: 30px;
@@ -783,4 +784,121 @@ form #email {
 
 .copy-write a:hover {
     color: var(--primary-color-blue);
+}
+
+
+
+/* Schedule page css */
+
+
+
+
+/* all schedule related css goes here */
+body {
+}
+#header {
+    background-image: url("../assets/images/schedule_hero_img_ov.svg");
+    /*height: 616px;*/
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    /*position: relative;*/
+
+    /*position: sticky;*/
+}
+
+/*.np {*/
+/*    position: fixed;*/
+/*}*/
+#header .active {
+    color: var(--primary-color-blue);
+}
+.schedule-details {
+    height: 950px;
+}
+.day-container {
+    display: flex;
+    justify-content: center;
+    height: 850px;
+    column-gap: 50px;
+    margin-top: 100px;
+}
+
+.sch-p-col-right {
+    display: flex;
+    flex-direction: column;
+    /*row-gap: 30px;*/
+    /*!*width: 100%;*!*/
+}
+.sch-p-time {
+    /*width: 30%;*/
+}
+
+.sch-p-col-left .sch-p-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--text-white);
+    margin-bottom: 30px;
+}
+
+.sch-p-col-left .sch-p-description {
+    font-size: 1rem;
+    color: var(--text-white);
+    font-weight: 400;
+    width: 70%;
+}
+
+.sch-p-col-right .sch-p-time {
+    font-size: 1.2rem;
+    color: var(--fade-disabled-color);
+    margin-bottom: 20px;
+}
+
+.sch-p-talk-desc .sch-p-talk-title {
+    font-size: 2.8rem;
+    color: var(--text-white);
+    margin-bottom: 20px;
+
+}
+
+.sch-p-talk-desc .sch-p-title-desc {
+    color: var(--fade-disabled-color);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.sch-p-speaker-profile {
+    display: flex;
+    /*justify-content: space-between;*/
+    column-gap: 30px;
+}
+
+.sch-p-col-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.sch-p-speaker-profile .img-wrapper {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.sch-p-speaker-profile .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color-blue);
+    object-fit: cover;
+}
+
+.sch-p-col-right-container {
+    color: var(--text-white);
+}
+
+.sch-p-speaker-profile {
+    margin-bottom: 50px;
 }
