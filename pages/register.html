@@ -1,10 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta description for search engines -->
+    <meta name="description" content="Discover NexaCon, your premier event management platform for diverse conferences. From tech symposiums to creative workshops, we curate and host impactful gatherings tailored for knowledge, networking, and inspiration. Join us to experience the pinnacle of event excellence.">
+    <!-- External CSS file link    -->
+    <link rel="stylesheet" href="../stylesheets/register.css">
+
+    <!--    <link rel="stylesheet" href="../stylesheets/index.css">-->
+
+    <!-- Fontawesome cdn   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts link    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+
+    <!-- Website name    -->
+    <title>NexaCon Conference</title>
 </head>
 <body>
+<header id="header">
+    <nav class="navbar wrapper">
+        <div class="logo">
+            <img src="../assets/images/logo.svg" alt="NexaCon home">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="nav-links">
+            <a href="./login.html">Log in</a>
+        </div>
+    </nav>
+</header>
 
+<main>
+    <div class="grid-container wrapper">
+        <div class="col-left">
+            <h1>Welcome!</h1>
+            <p>Please enter your details to register.</p>
+            <form action="">
+                <label class="lb-d-block" for="name">Full name</label>
+                <input type="email" name="name" id="name">
+                <label class="lb-d-block" for="email">Email address</label>
+                <input type="email" name="email" id="email">
+                <label class="lb-d-block" for="password">Choose your password</label>
+                <input type="password" name="password" id="password">
+                <label class="lb-d-block" for="rp-password">Repeat your password</label>
+                <input type="password" name="rp-password" id="rp-password">
+                <button class="log-in">
+                    <a href="#"> Register now</a>
+                </button>
+            </form>
+            <p class="register-link">Already have an account? <a href="login.html">Log in here</a></p>
+        </div>
+        <div class="col-right">
+            <!-- Image by <a href="https://pixabay.com/users/biancavandijk-9606149/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8264659">Bianca Van Dijk</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8264659">Pixabay</a> -->
+            <div class="img-wrapper">
+                <img src="../assets/images/register_p.jpeg" alt="Flowers laying on the ground">
+            </div>
+        </div>
+    </div>
+
+</main>
 </body>
 </html>
